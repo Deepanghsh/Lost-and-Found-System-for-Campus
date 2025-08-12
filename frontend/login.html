@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FindIt@Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main container for the login box */
+        .login-container {
+            display: flex;
+            width: 100%;
+            max-width: 900px;
+            min-height: 550px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Left side with the form */
+        .login-form-container {
+            flex-basis: 50%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-form-container .logo {
+            font-weight: 700;
+            font-size: 18px;
+            color: #6a5af9; /* Purple color from design */
+            margin-bottom: 30px;
+        }
+
+        .login-form-container h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 10px 0;
+        }
+
+        .login-form-container .subtitle {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        /* Form styling */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-options .remember-me {
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-options .remember-me input {
+            margin-right: 8px;
+        }
+
+        .form-options a {
+            color: #6a5af9;
+            text-decoration: none;
+        }
+        
+        .signin-btn {
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .signin-btn:hover {
+            opacity: 0.9;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .signup-link a {
+            color: #6a5af9;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        /* Right side with the illustration */
+        .login-illustration-container {
+            flex-basis: 50%;
+            background: linear-gradient(to bottom right, #c4b5fd, #8b5cf6); /* Purple gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Placeholder for the illustration */
+        .illustration {
+            width: 80%;
+            max-width: 350px;
+            /* In a real project, you would use an <img src="..."> here */
+            /* This is a placeholder to represent the graphic */
+            background: url('https://i.imgur.com/gY9J41O.png') no-repeat center center;
+            background-size: contain;
+            height: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                max-width: 400px;
+                min-height: auto;
+            }
+            .login-illustration-container {
+                display: none; /* Hide illustration on small screens */
+            }
+            .login-form-container {
+                padding: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Left Side: Login Form -->
+        <div class="login-form-container">
+            <div class="logo">FindIt@Campus</div>
+            <h1>Holla, Welcome Back</h1>
+            <p class="subtitle">Hey, welcome back to your special place</p>
+
+            <form class="login-form">
+                <input type="email" placeholder="stanley@gmail.com" required>
+                <input type="password" placeholder="••••••••••••" required>
+                
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="signin-btn">Sign In</button>
+            </form>
+
+            <div class="signup-link">
+                Don't have an account? <a href="#">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Right Side: Illustration -->
+        <div class="login-illustration-container">
+            <!-- This div is a placeholder for your illustration -->
+            <!-- I've used a simplified version of your graphic as a background -->
+            <div class="illustration"></div>
+        </div>
+    </div>
+
+</body>
+</html>
