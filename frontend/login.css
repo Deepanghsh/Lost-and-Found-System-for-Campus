@@ -131,6 +131,10 @@ body {
     height: 100%;
 }
 
+.back {
+    text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .login-container {
